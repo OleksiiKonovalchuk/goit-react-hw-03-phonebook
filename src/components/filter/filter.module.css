@@ -1,0 +1,14 @@
+.input {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  color: blueviolet;
+  width: 30%;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.span {
+  margin-bottom: 10px;
+}

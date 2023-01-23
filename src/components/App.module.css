@@ -1,0 +1,10 @@
+.App {
+  /* height: 100vh; */
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  font-size: 40px;
+  color: #010101;
+}
