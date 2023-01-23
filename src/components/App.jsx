@@ -12,10 +12,9 @@ class App extends Component {
   onDelete = id => {
     const contacts = [...this.state.contacts];
     const personToFind = id;
-    const ourPerson = contacts.findIndex(({ id }) => id === personToFind);
-    contacts.splice(ourPerson, 1);
+    const newContacts = contacts.filter(({ id }) => id !== personToFind);
     this.setState({
-      contacts: contacts,
+      contacts: newContacts,
     });
   };
   submitCathcer = ({ name, number }) => {
