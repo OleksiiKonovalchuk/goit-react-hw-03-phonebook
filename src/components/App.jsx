@@ -47,7 +47,13 @@ class App extends Component {
     const nameIs = e.target.value;
     this.setState({ filter: nameIs });
   };
-
+  componentDidMount() {
+    const savedContacts = JSON.parse(localStorage.getItem('contacts'));
+    this.setState({ contacts: savedContacts });
+  }
+  componentDidUpdate() {
+    localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+  }
   render() {
     return (
       <div className={css.App}>
